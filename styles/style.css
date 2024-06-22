@@ -1,5 +1,160 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
+:root{
+  --main-font: IBM Plex mono;
+  --accent-font: "Raleway";
+  --bg-color: #000028;
+  --text-color: #F1B2CE;
+  --accent-color: #FF0070;
+}
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  min-inline-size: 375px;
+  max-width: 1024px;
+  margin: 0;
+  color: var(--text-color, F1B2CE);
+  font-family: var(--main-font, "sans-serif");
+  background-color: var(--bg-color, #000028);
+}
+
+.header{
+  display: flex;
+  height: 768px;
+  width:96vw;
+  background-image:url(../images/cover-image-dark.png);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:cover;
+  padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);;
+}
+
+.header__theme-menu{
+  display:flex;
+  justify-content: center;
+}
+
+.header__theme-menu-list{
+  display: flex;
+  gap:23px;
+  list-style-type: none;
+}
+
+.header__theme-menu-button{
+  font-family: var(--main-font, sans-serif);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: var(--accent-color);
+  background:none;
+  border: none;
+}
+
+.header__theme-menu-button_active {
+  padding: 5px 13px;
+  border: 1px solid var(--accent-color);
+}
+
+.nav__decoration {
+
+}
+
+.nav__decoration::after {
+  content:"";
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid white;
+  border-right: #FF0070;
+}
+
+.heading{
+  font-family: var(--main-font, sans-serif);
+  font-weight: 700;
+  font-size: 120px;
+  line-height: 82.5%;
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  margin-top: 273px;
+}
+
+.heading__textbox{
+  font-family: var(--main-font);
+  color:var(--bg-color);
+  background-color:var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  width: 491px;
+  height: 71px;
+  margin-left: 500px;
+  margin-top: 114px;
+}
+
+.seaction{
+  padding: 60px 20px 0 20px;
+  display: flex;
+}
+
+.header__section{
+  width: 314px;
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--accent-color);
+}
+
+.section__list-item{
+  display: flex;
+  flex-grow: 1;
+  background-color:var(--accent-color);
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--bg-color);
+}
+
+.section__list-item-paragraph {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  color: var(--text-color);
+}
+
+.seaction-test{
+  display: flex;
+  flex-direction: column;
+}
+
+.section__list-item-header{
+  margin-bottom: 20px;
+}
+.seaction-lots{
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 19px;
+}
+
+.grid-item{
+  width: 100%;
+}
+
+.heading-test{
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 157px;
+  line-height: 82.5%;
+  color: #DB00FF;
+  text-shadow: 2px 2px 0px #FF0070;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
