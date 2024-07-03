@@ -9,5 +9,9 @@
   --accent-font: "Raleway";
   --bg-color: #000028;
   --text-color: #f1b2ce;
-  --accent-color: #ff0070;
+  --accent-color: #000028;
+  --header-theme:url(../images/cover-image-dark.png);
+  --logo-color:#db00ff;
+  --extra-color:#ff0070;
+  --button-color:#ff0070;
 }

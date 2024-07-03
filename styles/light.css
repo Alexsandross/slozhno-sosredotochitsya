@@ -9,10 +9,10 @@
     --accent-font: "Raleway";
     --bg-color: #fff1f7;
     --text-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #353430;
     --header-theme:url(../images/cover-image-light.png);
     --logo-color:#FFC2E6;
-    --extra-color:#353430;
+    --extra-color:#FF8DCB;        
     --button-color:#353430;
 }
 
@@ -22,10 +22,10 @@
     --accent-font: "Raleway";
     --bg-color: #fff1f7;
     --text-color: #353430;
-    --accent-color: #FF8DCB;
+    --accent-color: #353430;
     --header-theme:url(../images/cover-image-light.png);
     --logo-color:#FFC2E6;
-    --extra-color:#353430;
+    --extra-color:#FF8DCB;        
     --button-color:#353430;
     }
 }
