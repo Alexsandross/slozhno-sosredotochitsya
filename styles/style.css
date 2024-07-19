@@ -15,7 +15,8 @@
 
 
 .header {
-  width: 100vw;
+  position: relative;
+  width: 100%;
   max-height:768px;
   block-size: 100vh;
   min-block-size: 668px;
@@ -29,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: 10px;
 }
 
 .header__theme-menu-button {
@@ -66,7 +67,7 @@
 .nav__decoration {
   position: absolute;
   display: flex;
-  top: 3%;
+  top: 2.6%;
   right: 3%;
   color: var(--button-color);
   font-weight: 400;
@@ -96,6 +97,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 82.5%;
   text-shadow: 4px 4px 0 #ff0070;
+  margin-left: -20px;
 }
 
 .heading__textbox {
@@ -108,52 +110,14 @@
   line-height: 23px;
   background-color: var(--extra-color);
   justify-self: end;
-  align-self: center  ;
-}
-
-.decorated-zone::before {
-  content: '';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  top: 3%; 
-  right:2%; 
-  border-top: 1px solid var(--button-color);
-  border-right: 1px solid var(--button-color);
-}
-
-.decorated-zone::after {
-  content:'';
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  bottom: 0;
-  left: 0;
-  margin-bottom: 2%;
-  margin-left: 2%;
-  border-bottom: 1px solid var(--button-color);
-  border-left: 1px solid var(--button-color);
+  align-self: center;
 }
 
 .section {
   display: grid;
-  grid-template-columns: 1fr minmax(min-content, max-content);
-  width: 100%;
-  padding: 60px 20px 20px;
-}
-
-.section-lots{
-  grid-template-columns: minmax(min-content, max-content);
-  grid-template-rows:15% minmax(min-content, max-content);
-  width: 100%;
-  padding: 40px 20px 50px 20px;
-}
-
-
-.section__list-lots{
-  display: flex;
+  grid-template-columns: minmax(315px, 20%) minmax(clamp(20%, 649px, 8em), 1fr);
   gap: 20px;
-  padding: 0;
+  padding: 60px 20px 20px;
 }
 
 .header__section {
@@ -167,7 +131,7 @@
   margin-bottom: 10px;
 }
 
-.section__list-item {
+.section__list-item-header {
   display: flex;
   flex-grow: 1;
   color: var(--accent-color);
@@ -177,7 +141,7 @@
   font-style: normal;
   line-height: 23px;
   background-color: var(--extra-color);
-  margin-bottom: 10px;
+  margin-bottom: 13px;
 }
 
 .section__list-item-paragraph {
@@ -187,11 +151,41 @@
   font-size: 18px;
   font-style: normal;
   line-height: 23px;
-  margin-bottom: 20px;
+}
+
+.section__list li:not(:last-child) .section__list-item-paragraph {
+  margin-bottom: 24px;
+}
+
+.section-lots{
+  padding: 44px 20px 26px;
+}
+
+.section__list-lots{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(clamp(200px, 30%, 8em), 1fr));
+  grid-template-rows: minmax(min-content, max-content);
+  grid-auto-flow: dense;
+  gap: 20px;
+}
+
+
+.section-lots .header__section {
+  margin-bottom: 0;
+  margin-top:20px;
+  width: 315px;
+}
+
+.section-lots .section__list-lots{
+  margin-top: 20px;
+}
+
+.section__list-item-header-extra{
+  margin-top: 21px;
 }
 
 .section__list-paragraph-link{
-  text-shadow:2px 2px 0 var(--accent-color);
+  text-shadow:2px 2px 0 var(--extra-color);
   text-decoration: none;
 }
 
@@ -200,15 +194,11 @@
 }
 
 .section__list-paragraph-link:focus-visible{
-  border:1px solid var(--extra-color);
+  border:1px solid var(--text-color);
 }
 
 .section__list-paragraph-link:hover{
-  border-bottom:1px solid var(--extra-color);
-}
-
-.section__list-item-header {
-  margin-bottom: 20px;
+  border-bottom:1px solid var(--text-color);
 }
 
 .section__poster{
@@ -220,10 +210,9 @@
 
 .section__poster__template {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 19px;
   width: 100%;
+  margin-top: 12px;
 }
 
 .grid-item {
@@ -253,8 +242,7 @@
 .footer{
   display: flex;
   position: relative;
-  block-size: 100vh;
-  min-block-size: 668px;
+  min-block-size: 768px;
   justify-content: center;
   width: 100%;
   padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
@@ -278,7 +266,7 @@
   position: absolute;
   width: 25px;
   height: 25px;
-  top: 3%; 
+  top: 2.6%; 
   right:2%; 
   border-top: 1px solid var(--button-color);
   border-right: 1px solid var(--button-color);
@@ -307,33 +295,32 @@
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
-    margin-top:192px;
+    margin-top:134px;
   }
   
   .header__theme-menu-list {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 23px;
     box-sizing: border-box;
   }
 
   .heading {
     margin-top:0 ;
-    margin: 170px 0 0 0px;
+    margin: 127px 0 0 -10px;
   }
 
   .heading__textbox {
     display: flex;
     width: 364px;
     min-height:90px;
-    margin-bottom: 20%;
+    margin-bottom: 17%;
   }
 
   .section{
     display: grid;
     grid-template-columns: 236px minmax(min-content, max-content);
-    padding: 60px 20px 20px;
+    padding: 67px 20px 20px;
     gap:20px;
   }
  
@@ -362,9 +349,6 @@
  
 @media (width<=376px){
   .page {
-    color: var(--text-color, F1B2CE);
-    font-family: var(--main-font, "sans-serif");
-    background-color: var(--bg-color, #000028);
     min-width: 375px;
   }
   
