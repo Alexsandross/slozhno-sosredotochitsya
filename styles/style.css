@@ -316,7 +316,8 @@
   .heading__textbox {
     display: flex;
     width: 364px;
-    min-height: 90px;
+    /* min-height: 90px; */
+    width: min(55%, 364px);
     margin-bottom: 17%;
   }
 
@@ -442,7 +443,7 @@
   }
 
   .heading__textbox {
-    max-width: 355px;
+    min-width: 355px;
     justify-self: start;
   }
 
