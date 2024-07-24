@@ -140,7 +140,7 @@
   font-style: normal;
   line-height: 23px;
   background-color: var(--extra-color);
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
 
 .section__list-item-paragraph {
@@ -153,7 +153,7 @@
 }
 
 .section__list li:not(:last-child) .section__list-item-paragraph {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .section-lots {
@@ -240,8 +240,8 @@
 .footer {
   display: flex;
   position: relative;
-  /* min-block-size: 768px; */
-  min-block-size: 100vh;
+  min-block-size: 768px;
+  height: 100vh;
   justify-content: center;
   width: 100%;
   padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
@@ -290,6 +290,11 @@
     grid-template-rows: 1fr 1fr 1fr;
   }
 
+  .nav__decoration{
+    top:2.8%;
+    right: 3.5%;
+  }
+
   .header__theme-menu {
     display: flex;
     justify-content: flex-end;
@@ -318,7 +323,7 @@
   .section {
     display: grid;
     grid-template-columns: 236px minmax(min-content, max-content);
-    padding: 60px 20px 20px;
+    padding: 64px 20px 20px;
     gap: 20px;
   }
 
@@ -360,7 +365,7 @@
   }
 
   .section__poster {
-    padding-top: 44px;
+    padding-top: 56px;
     padding-right: 17px;
   }
 
