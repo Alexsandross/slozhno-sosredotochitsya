@@ -480,4 +480,9 @@
     margin-top: 0;
     gap: 10px;
   }
+
+  .footer{
+    min-block-size: 668px;
+    height: 100vh;
+  }
 }
