@@ -317,7 +317,6 @@
 
   .heading__textbox {
     display: flex;
-    width: 364px;
     width: min(55%, 364px);
     margin-bottom: 16%;
     margin-right: 4px;
