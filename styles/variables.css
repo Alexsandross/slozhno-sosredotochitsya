@@ -15,7 +15,7 @@
   --hover-effect:rgba(255, 0, 112, 0.4);
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   :root {
     --main-font: IBM Plex mono;
     --accent-font: "Raleway";
@@ -27,5 +27,5 @@
     --extra-color:#FF8DCB;        
     --button-color:#353430;
     --hover-effect:rgba(50, 49, 45, 0.4);
-    }
-}
+  }
+} */
