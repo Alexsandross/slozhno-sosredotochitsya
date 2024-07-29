@@ -12,7 +12,7 @@
   background-size: cover;
   background-attachment: fixed;
 }
-/* 
+
 .header {
   position: relative;
   width: 100%;
@@ -23,7 +23,7 @@
   display: grid;
   grid-template-rows: 3vi 1fr 1fr;
   margin: 0;
-} */
+}
 
 .header__theme-menu-list {
   display: flex;
