@@ -16,8 +16,7 @@
 .header {
   position: relative;
   width: 100%;
-  max-height: 768px;
-  block-size: 100vh;
+  height: 100vh;
   min-block-size: 668px;
   padding: clamp(0.625rem, 0.2639rem + 1.5408vw, 1.25rem);
   display: grid;
@@ -286,7 +285,6 @@
 
 @media (width<=769px) {
   .header {
-    min-height: 1024px;
     grid-template-rows: 1fr 1fr 1fr;
   }
 
@@ -391,6 +389,12 @@
 }
 
 @media (width<=560px) {
+  .heading__textbox{
+    justify-self: start;
+    margin-bottom: 13%;
+    width: 100%;
+  }
+
   .section {
     display: flex;
     flex-direction: column;
@@ -421,7 +425,6 @@
 
 @media (width<=376px) {
   .header {
-    min-height: 688px;
     padding: 10px;
   }
 
